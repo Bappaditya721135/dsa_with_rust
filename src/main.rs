@@ -1,7 +1,7 @@
 // 3SUM 
 
 fn main() {
-    let arr = vec![-1, 0, 2, 1];
+    let arr = vec![-1, -1, 0, 2, 1];
     let result: Vec<i32> = find_triplets(arr);
     println!("result: {:?}", result);
 }
@@ -22,3 +22,6 @@ fn main() {
 // }
 
 
+fn find_triplets(arr: Vec<i32>) -> Vec<i32> {
+
+}
