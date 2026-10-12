@@ -1,4 +1,5 @@
 // SUBARRAY SUM EQUALS TO K 
+use std::collections::HashMap;
 
 fn main() {
     let arr = vec![2, 7, 5, 8, 1, 3];
@@ -26,12 +27,29 @@ fn main() {
 
 // OPTIMIZE APPROACH 
 fn subarray_sum_count(arr: Vec<i32>, target: i32) -> i32 {
+    let mut map: HashMap<i32, i32> = HashMap::new();
     let mut count = 0;
-    let mut prefix_sum = 0;
-    for num in arr {
-        prefix_sum += num;
-        let needed = prefix_sum - target;
-        println!("prefix sum: {:?}, needed: {:?}", prefix_sum, needed);
-    }
+    // let mut prefix_sum = 0;
+
+    // map.insert(0, 1);
+
+    // for num in arr {
+    //     prefix_sum += num;
+    //     let needed = prefix_sum - target;
+
+    //     if let Some(&frequency) = map.get(&needed) {
+    //         count +=frequency;
+    //     }
+    //     println!("prefix sum: {:?}, needed: {:?}", prefix_sum, needed);
+    // }
+
+    map.insert(0, 5);
+    let num = 0;
+    if let Some(&value) = map.get(&num) {
+            println!("map value: {:?}", value);
+        }
+    // for num in arr {
+        
+    // }
     count
 }
