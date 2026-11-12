@@ -32,11 +32,16 @@ fn spiral_matrix(matrix: Vec<Vec<i32>>) {
     let mut left = 0;
 
     println!("matrix: {:?}", matrix);
-    while top <= bottom {
+    while top <= bottom || left <= right {
         // left to right 
 
-        // top to bottom
+        for i in left..=right {
+            println!("left to right values: {:?}", matrix[top as usize][i as usize])
+        }
+        top +=1;
 
+        // top to bottom
+        for i in 
         // right to left 
 
         // bottom to top 
